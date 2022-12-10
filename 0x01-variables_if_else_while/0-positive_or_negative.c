@@ -3,6 +3,11 @@
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
+/**
+* main - Entry point
+* Description - prints if random generated number is +tive, zero or -tive
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
 	int n;
