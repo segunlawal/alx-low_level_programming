@@ -9,10 +9,8 @@
 */
 int main(void)
 {
-    for(int x='A'; x <='Z'; x++)
-    {
-        putchar(tolower(x));
-    }
+	for(int x='A'; x <='Z'; x++)
+		putchar(tolower(x));
 	/* your code goes there */
 	return (0);
 }
