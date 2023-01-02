@@ -4,7 +4,8 @@
  * @b: constant byte
  * @n: number of bytes
  *
- * The _memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
+ * The _memset() function fills the first n bytes of the
+ * memory area pointed to by s with the constant byte b
  *
  * Return: pointer to the memory area
  */
