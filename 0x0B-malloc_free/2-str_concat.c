@@ -25,7 +25,7 @@ unsigned int _strlen(char *str)
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int length, a;
+	unsigned int length, i, j;
 	char *new_str;
 
 	if (s1 == NULL)
