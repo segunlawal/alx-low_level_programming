@@ -40,7 +40,6 @@ char *_strdup(char *str)
 	for (a = 0; a < length; a++)
 		str_dup[a] = str[a];
 	str_dup[a + 1] = '\0';
-	free(str_dup);
 	return (str_dup);
 	}
 }
