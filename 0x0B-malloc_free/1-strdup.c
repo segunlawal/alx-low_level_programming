@@ -10,7 +10,7 @@ unsigned int _strlen(char *str)
 {
 	unsigned int a;
 
-	for (a = 1; *str != '\0'; a++)
+	for (a = 0; *str != '\0'; a++)
 		str++;
 	return (a);
 }
@@ -34,7 +34,7 @@ char *_strdup(char *str)
 	else
 	{
 	length = _strlen(str);
-	str_dup = malloc(length * sizeof(char));
+	str_dup = malloc((length + 1) * sizeof(char));
 	if (str_dup == NULL)
 		return (NULL);
 	for (a = 0; a < length; a++)
