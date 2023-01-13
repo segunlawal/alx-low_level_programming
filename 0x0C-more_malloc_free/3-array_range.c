@@ -8,8 +8,8 @@
 
 int *array_range(int min, int max)
 {
-	int *arr[];
-	unsigned int i, len = 0;
+	int *arr;
+	unsigned int i, len, j, k;
 
 	if (min > max)
 	{
@@ -29,7 +29,7 @@ int *array_range(int min, int max)
 			return (NULL);
 		}
 
-		for (j = 0; j <= max; j++)
+		for (j = 0; j <= (len - 1); j++)
 		{
 			for (k = min; k <= max; k++)
 			{
