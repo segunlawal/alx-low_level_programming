@@ -25,7 +25,6 @@ unsigned int str_len(const char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	const char *str_dup = strdup(str);
 	list_t *temp;
 
 	temp = malloc(sizeof(list_t));
