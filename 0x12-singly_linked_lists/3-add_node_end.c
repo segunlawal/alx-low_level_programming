@@ -10,11 +10,11 @@
 
 unsigned int str_len(const char *str)
 {
-        unsigned int len = 0;
+	unsigned int len = 0;
 
-        while (str[len] != '\0')
-                len++;
-        return (len);
+	while (str[len] != '\0')
+		len++;
+	return (len);
 }
 
 /**
@@ -42,6 +42,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp = temp->next;
 	temp->next = new;
 
-        return (head[0]);
+	return (head[0]);
 }
 
