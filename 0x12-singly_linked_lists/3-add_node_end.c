@@ -25,7 +25,8 @@ unsigned int str_len(const char *str)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *temp, *new;
+	list_t *temp;
+	list_t *new;
 
 	temp = head[0];
 	new = malloc(sizeof(list_t));
