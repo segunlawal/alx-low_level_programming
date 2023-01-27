@@ -18,22 +18,30 @@ unsigned int str_len(const char *str)
 }
 
 /**
- * add_node - adds a new node at the beginning of a list
+ * add_node_end - adds a new node at the end of a list
  * @head: head of list
  * @str: new string
  * Return: the address of the new element, or NULL
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-        list_t *temp;
+        list_t *temp, *new;
 
-        temp = malloc(sizeof(list_t));
-        if (temp == NULL)
+        temp = head;
+	new = malloc(sizeof(list_t));
+        if (new == NULL)
                 return (NULL);
-        temp->str = strdup(str);
-        temp->len = str_len(str);
-        temp->next = NULL;
-        head[0] = temp;
+        new->str = strdup(str);
+        new->len = str_len(str);
+        new->next = NULL;
+        if (temp == NULL)
+	{
+		temp = new;
+	}
+	while (temp->next != NULL)
+		temp = temp->next;
+	temp->next = new
+
         return (head[0]);
 }
 
