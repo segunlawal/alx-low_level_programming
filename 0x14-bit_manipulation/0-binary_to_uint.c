@@ -59,7 +59,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		each_int = (b[len - i - 1] - '0') * (_pow(2, len - i - 1));
+		each_int = (b[len - i - 1] - '0') * (_pow(2, i));
 		total += each_int;
 	}
 	return (total);
